@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Website</title>
+    <link rel="icon" type="image/x-icon" href="image/bank.png">
+
+    <!-- 
+        Frontend Developer Intern 2023 - Test
+        Name        : Shafa Salsabila
+        Semester    : 6
+        Major       : Computer Science Education
+        University  : Universitas Pendidikan Indonesia
+     -->
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+	<link href="style.css" rel="stylesheet"></link>
+	<link href="styleform.css" rel="stylesheet"></link>
+	<link href="card.css" rel="stylesheet"></link>
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <nav class="nav">
+		<div class="nav-area">
+			<a class="brand" href="">
+				<span>Company</span>
+			</a>
+			<svg class="nav-burger" fill="none" stroke="currentColor" viewbox="0 0 24 24" 
+            xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h16m-7 6h7" 
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+			<div class="nav-menu">
+				<li class="dropdown">
+                    <a href="#">ABOUT</a>
+                    <div class="dropdown-content">
+                        <a href="#">HISTORY</a>
+                        <a href="#">VISION MISSION</a>
+                    </div>                
+                </li>
+				<li><a href="#">OUR WORK</a></li>
+				<li><a href="#">OUR TEAM</a></li>
+				<li><a href="#kontak">CONTACT</a></li>
+		    </div>
+        </div>
+    </nav>
+
+
+    <!--IMAGE SLIDER-->
+    <div class="slider">
+        <div>
+                <img src="image/bg.jpg">
+                <div class="caption">
+                    <p>THIS IS A PLACE WHERE TECHNOLOGY &</p>
+                    <p>CREATIVITY FUSED INTO DIGITAL CHEMISTRY</p>
+                </div>  
+        </div>
+        <div>
+                <img src="image/about-bg.jpg">
+                <div class="caption">
+                    <p>WE DON'T HAVE THE BEST BUT WE HAVE THE</p>
+                    <p>GREATEST TEAM</p>
+                </div>          
+        </div>
+    </div>
+
+    
+    <!--CARD-->
+    <h3>OUR VALUES</h3>
+    <main class="cards">
+        <div class="arrow_box1">
+            <section class="card innovative">
+                <div class="icon">
+                    <img src="images/lightbulb-o.png" alt="INNOVATIVE">
+                </div>
+                <h3>INNOVATIVE</h3>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maxime exercitationem dolorem deserunt, unde, eaque ipsa?</span>
+            </section>
+        </div>
+        <div class="arrow_box2">
+            <section class="card loyalty">
+                <div class="icon">
+                    <img src="images/bank.png" alt="LOYALTY">
+                </div>
+                <h3>LOYALTY</h3>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Impedit similique eum itaque facere temporibus dolores.</span>
+            </section>
+        </div>
+        <section class="card respect">
+            <div class="icon">
+                <img src="images/balance-scale.png" alt="RESPECT">
+            </div>
+            <h3>RESPECT</h3>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequatur, sit? Tenetur et neque quod incidunt!</span>
+        </section>
+    </main>
+
+    
+    <!--CONTACT FORM-->
+    <div class="container" id="kontak">
+        <form id="form" action="#">
+            <h3>CONTACT US</h3><br><br>
+            <div class="input-control">
+                <label for="name">Username</label>
+                <input id="name" name="name" type="text">
+                <div class="error"></div><br>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div><br>
+            </div>
+            <div class="input-control">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" type="text"></textarea>
+                <div class="error"></div><br>
+            </div>
+            <button type="submit">SUBMIT</button>
+        </form>
+    </div>
+
+    
+    <!--FOOTER-->
+    <div class="footer">
+        <div class="jarak">
+            <p>copyright &copy; 2016, PT Company</p>
+            <img style="width: auto; height: 25px;" src="image/facebook-official.png">
+            <img style="width: auto; height: 25px;" src="image/twitter.png">
+        </div>
+    </div>
+
+    
+    
+    
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Slick JS -->    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+            autoplay: true,
+            autoplaySpeed: 2500
+            });
+        });
+    </script>
+
+    
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="form.js"></script>
+
+</body>
+</html>

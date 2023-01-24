@@ -1,0 +1,125 @@
+/* 
+        Frontend Developer Intern 2023 - Test
+        Name        : Shafa Salsabila
+        Semester    : 6
+        Major       : Computer Science Education
+        University  : Universitas Pendidikan Indonesia
+    */
+h3 {
+    padding-top: 40px;
+    text-align: center;
+    color: #3a3a3a;
+}
+
+main.cards {
+display: flex;
+padding: 20px;
+justify-content: center;
+align-items: center;
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 10px;
+    height: 200px;
+    width: 280px;
+}
+
+main.cards section.card:first-child {
+    margin-left: 0;
+}
+
+main.cards section.card img {
+    width: 30%;
+    margin-bottom: 10px;
+}
+
+main.cards section.card h3 {
+    padding-top: 0px;
+    font-size: 100%;
+    margin-bottom: 20px;
+    color: white;
+}
+
+main.cards section.card span {
+    color: white;
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+    line-height: 18px;
+}
+
+main.cards section.card.innovative {
+    background-color: #EA796E;
+    border: 2px solid #E55446;
+    margin-right: 20px;
+}
+
+main.cards section.card.loyalty {
+    background-color: #67986E;
+    border: 2px solid #5D795D;
+    margin-right: 20px;
+}
+
+main.cards section.card.respect {
+    background-color: #5396C1;
+    border: 2px solid #3E7299;
+    margin-right: 20px;
+}
+
+.arrow_box1 {
+    position: relative;
+}
+
+.arrow_box1:after{
+    left: 280px;
+    top: 50%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-left-color: #E55446;
+    border-width: 13px;
+    margin-top: -13px;
+}
+
+.arrow_box2 {
+    position: relative;
+}
+
+.arrow_box2:after{
+    left: 280px;
+    top: 50%;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-left-color: #5D795D;
+    border-width: 13px;
+    margin-top: -13px;
+}
+
+@media screen and (max-width: 720px) {
+    main.cards {
+        flex-direction: column;
+    }
+
+    main.cards section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+    main.cards section.card:last-child {
+        margin-bottom: 0;
+    }
+    main.cards section.card button {
+        font-size: 70%;
+    }
+}
